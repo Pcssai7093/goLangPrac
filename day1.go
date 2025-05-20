@@ -15,7 +15,7 @@ import (
 	"rsc.io/quote"
 )
 
-func main() {
+func day1() {
 	fmt.Println(quote.Go())
 	greeting, greetingError := greetings.Greet("")
 	if greetingError != nil {

@@ -1,0 +1,61 @@
+{
+    "better-comments.tags": [
+
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+        // ,
+        // {
+        //     "tag": "*",
+        //     "color": "#FFEB95",               // Light warm yellow (text)
+        //     "backgroundColor": "#3B3B3B",     // Dark gray (background)
+        //     "strikethrough": false,
+        //     "underline": false,
+        //     "bold": true,
+        //     "italic": false
+        //   }  
+          ,
+          {
+            "tag": "*",
+            "color": "#A3E7FC",               // Light warm yellow (text)
+            "backgroundColor": "#1E1E30",     // Dark gray (background)
+            "strikethrough": false,
+            "underline": false,
+            "bold": false,
+            "italic": false
+          }  
+    ]
+}
