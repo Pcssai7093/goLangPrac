@@ -21,6 +21,99 @@ interview js topic to explore
 16) virtual dom in react js and how it works and why fast?
 
 
+
+
+/*
+***** listed by chatgpt
+
+Scope (Global, Local, Block)
+
+Event Delegation
+
+Prototype and Prototypal Inheritance
+
+Promises and Async/Await
+
+Call, Apply, Bind Methods
+
+Currying and Partial Application
+
+JavaScript Modules (ES6 imports/exports)
+
+Strict Mode
+
+Error Handling (try/catch, throw)
+
+Closures vs Callbacks
+
+This keyword and Context Binding
+
+Functional Programming Concepts
+
+Debounce vs Throttle (detailed use cases)
+
+Event Loop Explained with Examples
+
+Difference between var, let, and const
+
+Spread and Rest Operators
+
+Destructuring Assignment
+
+Higher Order Functions
+
+Memory Leaks in JS and Prevention
+
+Garbage Collection in JavaScript
+
+Deep vs Shallow Copy
+
+Hoisting Explained (Variables and Functions)
+
+JavaScript Execution Context & Call Stack
+
+Single Threaded Nature of JS and How It Handles Async
+
+Web APIs (Fetch, XMLHttpRequest)
+
+CORS (Cross-Origin Resource Sharing)
+
+Security Concepts (XSS, CSRF, CORS)
+
+Browser Rendering and Reflow/Repaint
+
+CSS Specificity and Cascade
+
+Responsive Design Basics
+
+Webpack/Bundlers Basics
+
+React Lifecycle Methods / Hooks
+
+State Management Concepts (Redux, Context API)
+
+Virtual DOM and Reconciliation
+
+Promises vs Observables
+
+Event Bubbling and Capturing
+
+Local Storage vs Session Storage vs Cookies
+
+Service Workers and PWA Basics
+
+Accessibility Best Practices
+
+Testing Basics (Unit, Integration, E2E)
+
+
+
+
+
+*/
+
+
+
 online conding questions scraped (focus string,tree and graphs,  Dynamic Programming concepts)
 1)  Graph traversal question
 2) Find shortest path from source to destination

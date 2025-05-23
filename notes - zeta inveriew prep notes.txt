@@ -35,3 +35,50 @@ Platform Thread Manages communication between Flutter and the underlying OS (And
 
  *** isolates are used to offload work from main thread
 
+----------- React js -----------------
+steps how react page renders
+	1) browser downloads src file and parses the code.
+	2) react starts building the dom(first virtual dom and builds real dom) and modifies dom
+	3) browser uses rendering engines to display the dom(blink or webkit)
+
+***** how virtual dom works in react js
+
+on any change react builds virtual dom first, and uses as diffing algorithm to find the minimal changes and modifies the real dom
+efficiently. so these is the reason its faster.
+
+-------------- Polyfills -------------
+a peice of code writing to enable support of certian features in older js browsers
+
+
+
+ ------------- vue.js -----------------
+ vue was designed to be a simple verison of react and angular bringin reactiity and good seperation of logic beween ui and logic unlike React	
+ 
+ vue also uses virtual dome like react though there are minor differnts
+
+
+ -------------- async vs defer-------------
+these are the keywords used to tell browser how to load scirpt file.
+
+without anyKeyword: browser pauses html parsign as soon as it encouters script tag and will load the script
+with async: scrit is loaded paraller when encountedd.
+withe deferL srcipt is loaded after html parsing is done.
+
+
+
+--------------- scope and gloabal object in js --------
+
+
+---------------prototype,prottycpal chain and inheritince =====
+every object in js has an internal property prototype which refers to a parent object of parent data type object.
+prototyle chain is that if we access a method or property of an object it will go all parent object and return the value or method.
+
+
+
+--------------- Es6 vs Commonn js modules -----------------
+common js modules are the native modules for js. es6 introduced to provide support in browsers
+
+
+-------------- js strict mode---------
+It helps catch common coding bugs and makes JavaScript safer and cleaner.
+
