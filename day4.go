@@ -103,4 +103,23 @@ func pointers() {
 
 	// * printing the pointer
 	fmt.Println(reflect.TypeOf(aptr), *aptr)
+
+	arr := [5]int{1, 2, 3, 4, 5}
+
+	changeArrayV1(arr)
+
+	fmt.Println(arr)
+
+	changeArrayV2(&arr)
+
+	fmt.Println(arr)
+
+}
+
+func changeArrayV1(arr [5]int) {
+	arr[0] = 100
+}
+
+func changeArrayV2(arr *[5]int) {
+	arr[0] = 100
 }

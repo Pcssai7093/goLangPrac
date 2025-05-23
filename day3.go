@@ -75,17 +75,16 @@ func slices() {
 	s = append(s, 3)
 	fmt.Println(s[0:])
 
+	arr := [5]int{1, 2, 3, 4, 5}
+	arr[1] = 10
 
-	arr := [5]int{1,2,3,4,5}
-	arr[1] = 10;
-	
 	// * this is the way to make slice from normal array
 	arr2 := arr[0:]
 	arr2[1] = 12
 	fmt.Println(arr[1:])
-	fmt.Println(s,reflect.TypeOf(s))
-	sliceArr := make([]int,len(arr))
-	copy(sliceArr,arr[0:])
+	fmt.Println(s, reflect.TypeOf(s))
+	sliceArr := make([]int, len(arr))
+	copy(sliceArr, arr[0:])
 	fmt.Println(sliceArr)
 
 	// * slice of array refers to same location of original array change this  changes that unlike js and python
@@ -110,11 +109,11 @@ func maps() {
 	fmt.Println(len(mp))
 
 	keys := make([]string, 0, len(mp))
-	for k,v := range mp {
+	for k, v := range mp {
 		keys = append(keys, k)
 		fmt.Println(v)
 	}
-	
+
 	fmt.Println(keys)
 
 	// * clear all entries in a map
