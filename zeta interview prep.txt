@@ -1,0 +1,74 @@
+interview js topic to explore
+------------------------------------------
+
+*** learn readering strategy frontend frameworks and optimistation
+
+1) (Closure, hoisting, throttle, debounce)
+2) Building small UI screen application in 1 hr for frontend developer
+3)  What is an operator in programming?
+4)  What is an array?
+5) Data structures and algo
+6) Polyfills , basic react app
+7) *** Problem-Solving & Algorithms Topics often include: • Data structures (e.g., arrays, trees, graphs) • Algorithms (sorting, searching, dynamic programming) 
+8) questions related to security of the data in the application
+9) browser history Mechanism
+10)  Async vs Defer
+11) JS event loops, task queue, microtask and macro task queues
+12) app performance, LLD questions
+13) *** JS optimization question on Promise.all
+14) Basic CSS question
+15) **** need to focus on asynchronous/concurrne coding in js involing promised
+16) virtual dom in react js and how it works and why fast?
+
+
+online conding questions scraped (focus string,tree and graphs,  Dynamic Programming concepts)
+1)  Graph traversal question
+2) Find shortest path from source to destination
+3) leetcode hard level (try popular string or medium dp)
+4) BFS random number generato
+5) Maximize the sum of Nodes in a Binary tree, where we cannot select Nodes that are directly connected with an edge. We have to return the Maximum Sum
+6) Given a string consist of only 0's and 1's. Find the minimum swaps required to convert the string such that all 1's should be together(not necessarily at the begin or end
+7) binary search,(leetcode medium)
+8)  involved strings and permutations (leetcode hard)
+9) Count number of ways to partition a set into k subsets
+10) Sorted subsequence of size 3 in linear time using constant space
+11) Dutch Flag Algorithm
+12) Find k closest elements to the target from the given BST
+13) Given a 2D matrix each row containing only 0’s/1’s, in sorted fashion. Find which row has the most numbers of one’s.
+
+
+11) 
+Question 1: Minimum perfect squares to add that sum to given number.
+
+Difficulty: Medium
+Problem Link: https://www.geeksforgeeks.org/problems/get-minimum-squares0538/1
+Question 2: Similar to Paint House problem.
+
+12) 
+Difficulty: Medium
+Problem Link: https://www.codingninjas.com/studio/problems/paint-house_1460385
+
+
+https://medium.com/@anishacse2018/zeta-interview-experience-sde-1-frontend-b86c3fc37a8d
+13) Given an array of strings, find the longest common prefix among all of them. This was an implementation-based question. I was asked to code it and run it on the editor of my choice. However, I had to code in Javascript as I applied for a frontend role.
+14) This question was scenario based. Given ‘n’ zeta coins, we can divide it into multiple other coins by dividing it with 2, 3, or 4. We need to find the maximum possible sum one can get by doing these divisions. For eg: n = 12, ans = 13 (Recursion+Memoization)
+
+*** need to explore similar sort of frontend concept quesitions
+Round 2( Technical Interview 2): (Duration: 1hr 15 min) In this round, I was asked questions specific to my role. I was asked questions on HTML, CSS, Javascript, and React. I have listed the questions below:
+
+Explain different types of positioning in CSS with proper examples. (Absolute, relative, static, fixed, sticky)
+Talk about different datatypes in Javascript.
+Explain and code map, filter, and reduce functions in javascript.
+Difference between == and === in javascript.
+Different types of inheritance with examples in javascript.
+What is Virtual DOM? Why is React fast?
+Explain the Reconciliation algorithm. (Follow up on the above question)
+I was asked about display properties in CSS.
+What is event bubbling?
+Promises Vs async await in Javascript.
+Explain and code examples of closures in javascript.
+Difference between var, const, and let
+What is hoisting in javascript?
+Currying in Javascript
+
+

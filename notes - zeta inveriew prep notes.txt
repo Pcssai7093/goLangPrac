@@ -1,0 +1,37 @@
+notes - zeta interview prep notes
+-----------------------------
+
+-> why js is not multithreaded
+	just to be simple
+
+
+->What is libuv?
+	libuv` is an open-source library that provides support for asynchronous I/O based operations. 
+	Event Loop, asyc IO, thread poo
+
+
+------ worker threads ------
+used to run task of multiple thread in nodejs runtime.
+
+----- web worker in browser ----------
+Web Workers are super useful in web browsers because they let you run heavy or time-consuming tasks in the background without freezing the user interface.
+
+
+
+------ service worker --------------
+A Service Worker is a special type of JavaScript script that runs in the background of your browser, separate from the web page. It acts like a programmable network proxy, giving you control over how network requests from your web app are handled. runs even after tab is closed independent page lifecycle.
+
+
+
+---- flutter frontend rendering and other topics -------- *** skia rendering engine platform independent
+
+*** Flutter renders UI by drawing every pixel itself using Skia, independent of the platform's native UI widgets.
+has below threads
+
+
+UI Thread (Main Thread) running dart code
+Raster Thread (GPU Thread) responsible for rendering the UI on the screen.
+Platform Thread Manages communication between Flutter and the underlying OS (Android/iOS).
+
+ *** isolates are used to offload work from main thread
+
