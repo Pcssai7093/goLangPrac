@@ -114,7 +114,121 @@ Error: my error
 hello
 
 
+-------- * toString and valueOf methods------------
+toString = this returns string representation of object by default [object object] for user defined objects
+valueOf = this tries to return the primitive value of object if no primitive values exists it return object itself
+
+
+*** settimeout--------
+// method signature
+setTimeout(callback, delay, arg1, arg2, ..., argN)
+
+here arg1 ... argN are paramerter passed to callack function
+
 
 *---------------------Nodejs event loop--------------
--> libuv is the library used by js that has the event loop this library is written in c++
+-> libuv is the library used by js that has the event loop this library is written in c
 -> all the synchrounoes code is executed with blocking like and libuv takes care of the asychroues code with event loop
+
+ ***** thread pool in Nodejs
+ even though js a single threaded under the hood. event loop and libuv use some worker treads to offline task from main thread.
+
+***** js exection stack with event loop components
+
+1) call stack
+2) event loop controler'
+3) task queues (macro and microtask queue)
+
+
+**** different queues in nodejs event loop and priorty
+
+1) mirotask queue (process.nextTick first and promises are given second priority)
+2) timer queue (settmeout, setubterval callback)
+3) IO queue (io callbacks)
+4) checkqueue (set immediate)
+5) close queue ( callback related to closing resouarces are executed ) exampels stream.on("close',())
+
+
+----------- *** steps in event loop---
+1) all synchronouse code exected first.
+2) all tasks in microtask queue are executed first(with giving priority to nextTick callbacks first)
+3) all callback available/ready for timer queue are executed.
+4) if any callback available in microtask queue they are executed next
+5) all callbacks in IO queue are executed.
+6) if any callback available in microtask they will be executed
+7) all callback ready in check queue are executed(set immedieance)
+8) if any callbacks available in microstask queue are exectured
+9) all callbacks in close are executed.
+10) anycallbacks aviable in microtask queue they are executed.
+
+
+
+ ***** JS promises methods ********
+
+1) Promise.all([p1,p2])  // waits for all promises to finish early on first reject.
+2) primise.allSettled([p1,p2,p3]) // wiats for all to resolve/reject and returns the result on then fmethod
+3) promise.race // resolve/reject with first settle promised
+4) primise.any // resolved with first succesull promise error if all reject
+
+**** this and bind in js normatl function and object
+
+some imp example
+
+  const car = {
+    brand: "Tesla",
+    showBrand() {
+      console.log(this.brand);
+    }
+  };
+  
+  car.showBrand() // output Tesla
+  const show = car.showBrand;
+  show(); // output undefined
+
+  explanation in the first called method of car is being called with object referece. so contex of this belongs to object
+   but in the second we have copied the funciton but here this refers to global or window object. as there is no context
+
+** we can use bind method to attach this context to function of an object
+ let ; show2  = car.showBrand
+ show2 = show2.bind(car)
+ show2() // output Tesla
+
+
+***------- closures is js ---------------
+closure is function behavior that retains outer functions scope even after the outer function fixed its execution and removed from exection stack
+
+
+**------------- implicit type conversion in js-----
+applications of closure
+1) date privacy and enacasulation (hiding variable in function scope)
+2) able async functions to retain ourter funtions context or variales
+3) can create function factories 
+ ** function factory is a function that returns other function which is retain someconfiguration or state provided like 
+4) *** used in memoization (caching result of functions)
+
+ example
+ ------------
+ 
+ function multiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2);
+const triple = multiplier(3);
+
+console.log(double(5)); // 10
+console.log(triple(5)); //
+
+
+*** ------implement debouncer throttler and memoized  application using closure
+
+** debouncer and throttler are unsed to control the limit of function exeuction,
+
+deboucer: delay the function for over a time. any unnecsassy immediate calls are not executed
+throttler: limti the rate of funciton execution for some rate in an interval
+
+
+
+***** Date Object tutorial ------------------
