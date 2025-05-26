@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My shopping List</h1>
+    <form id="myForm">
+      <input type="text" name="item" />
+      <button type="submit">Add item</button>
+    </form>
+    <ul id="myList"></ul>
+    <a
+      href="https://www.sitepoint.com/community/t/position-sticky-not-working/367770/3"
+      >some link</a
+    >
+    <script>
+      window.addEventListener("load", (e) => {
+        console.log("page is loaded");
+      });
+
+      window.addEventListener("beforeunload", (e) => {
+        e.preventDefault();
+        // neede for confirmation message to get displayed
+        e.returnValue = "";
+        console.log("page is unloadind");
+      });
+      let form = document.getElementById("myForm");
+      let myList = document.getElementById("myList");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let formData = new FormData(form);
+
+        let itemName = formData.get("item");
+        console.log(itemName);
+        let li = document.createElement("li");
+        let textContent = document.createElement("span");
+        textContent.textContent = itemName;
+        let deleteItemBtn = document.createElement("button");
+        deleteItemBtn.textContent = "Delete item";
+        li.appendChild(textContent);
+        li.appendChild(deleteItemBtn);
+        myList.appendChild(li);
+        deleteItemBtn.addEventListener("click", () => {
+          myList.removeChild(li);
+        });
+        localStorage.setItem("myList", "hello");
+        // console.log("submitting form")
+      });
+    </script>
+  </body>
+</html>

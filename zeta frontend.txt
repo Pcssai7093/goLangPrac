@@ -1,0 +1,39 @@
+1) Js coding, app performance, 
+2) LLD questions.
+3) Output questions are asked based on JS event loops, task queue, microtask and macro task queues.
+4) Memoization is JS Implement Publisher Subscriber Model 
+5) Implement browser history Mechanism Async vs Defer
+6) Explain execution stack 
+7)Implement bind method 
+8).Deep copy implementation 
+9). Event delegation and it's types 
+10) How do you optimize website 
+11). cookie, local storage, session storage 
+12_. What is Debounce and throttle and it's implementation. 
+13). javascript inhertince (very important) 
+14). sum(1)(2)(3) implementation 
+15. closures
+
+
+conding Test
+-----------------------
+
+ Create a box and an array with different background colors; clicking on the array changes the box's color (no frameworks allowed). Then, I had to write a polyfill for debounce and implement it in the first task to change the color based on the number of clicks.
+Other topics covered: Async vs Defer, Doctype, meta tags, local storage vs session storage vs cookies, Debounce vs Throttle, closures, event delegation, the event loop, React keys, CSS positioning, and CSS visibility.
+
+
+ Round 2: Hiring Manager (30–45 mins) We talked about my previous work, React.js-based projects, and web development fundamentals.
+
+The conversation was smooth and aligned well with the role. 
+
+
+Round 2 :- LLD
+a) Design for a nested comment structure focusing on what should we get from the backend
+b) JS optimization question on Promise.all
+c) Basic CSS question
+
+Round 3 :- F2F (Inperson)
+a) Find LinkedList intersection
+Rest Behavorial Question about experience etc
+
+How to improve the performance of the first load of your page Service Worker Service Worker vs Web worker

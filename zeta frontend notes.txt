@@ -1,0 +1,120 @@
+Object.toString = () => a;      // defines what to return when coerced to string
+Object.valueOf = () => a;       // defines what to return when coerced to number
+
+
+------- origin of html -----------
+Tim Berners-Lee, a British computer scientist at CERN, invented HTML as part of his larger project to create a global information-sharing system, which became the World Wide Web.
+
+
+------ explore html5 ----------
+
+
+---------------explore all tags in html5-----------
+
+
+
+--------------- CSS -------------
+** block elements, inline-elements, inline-block elements
+1) block elements start on a new line, breaks with a new line. can set height and widht for them (takes full width of avialble view port)
+examples: div,p,h,form, article ,selection
+2) inline-elements takes width of the content, and dont start or break with new line. cannot set width or height for those elements.
+example: span, a, img, abbr,input etc
+3) inline-block  are same as inline but height and width can be set.
+
+** css psudo-selectors
+exampels .class_name::after, ::before, ::selection
+
+
+** css psuedo class
+ex: :hover, :active, :focus etc
+
+
+** css float property
+float property takes the block level element out the block level view. all the inline content can wrap around it. 
+* not as it removed from block level flow. parent will collapse/floated element will not be contained by its parent.
+
+** clear property
+this property is used to clear all the floating element for a element on left,right or both
+example: clear:left, clear:both etc
+
+** css postion property
+possible values: 
+1) static(default)
+2) relative(position element relative to itself with top,right, bottom, left)
+3) fixed(positioning element with respect to view port)
+4) abosule(positioning element with respect to its positioned  parent(if parent is not positioned its with repect to view port))
+
+
+***The important parts of a web browser as represented in JavaScript — 
+1) Navigator, 
+2) Window, 
+3) and Document.
+
+
+** beforeunload and unload event in js
+above events are invoked when user is leaving a web page. usefull for put some warning while  leaving.
+
+** important event listerners on window object
+-- resize,load, unload, online, offline, deviceorientation
+
+
+------- TextNode-----
+A Text Node in the DOM (Document Object Model) represents the actual text content inside an HTML element, but not the element itself.
+
+----- ** work with dates and polyfill implmentations(through with js methods of array, object and string)
+
+
+--- localStorage vs sessionStorage vs cookies--------
+
+1) localstorage persists over tab relaod,tab close and browser closes.
+2) session storage just persists over page reloads, closes on browser close or tab close.
+3) cookie can be session based or perists when expiry date is set
+
+----------promises -------
+*** js Promise takes two call backs fucntion with resovle or reject.
+
+*** then and catch methods in js takes fullfile or rejected callback values and returns wrapped values of the return value if there is a return values set in the then or catch function.
+
+ 
+------------** promise chaining
+*** in chain of promise hanlding "return" will returns a promise wrapped with returned value. throw error will return a rejected promise wrapper with error.
+
+example:
+let p1 = new Promise((resolve,reject)=>{
+    resolve()
+})
+
+p1.then((res)=>{
+    console.log(res)
+    // return "dsfds"
+})
+.then((res)=>{
+    console.log(res)
+    // return "dfdfdfd"
+}).then((res)=>{
+    console.log(res)
+    // return "dfdfdfd"
+    throw Error("my error")
+}).catch((err)=>{
+    console.log(err)
+    return "hello"
+}).then((res)=>{
+    console.log(res)
+}).catch((err)=>{
+    console.log(err)
+})
+
+output
+---------------------------------
+undefined
+undefined
+dfdfdfd
+Error: my error
+    at c:\Users\chandra sekhar\StudioProjects\go Learning\promises\1.js:15:11
+hello
+
+
+
+*---------------------Nodejs event loop--------------
+-> libuv is the library used by js that has the event loop this library is written in c++
+-> all the synchrounoes code is executed with blocking like and libuv takes care of the asychroues code with event loop
