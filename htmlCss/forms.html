@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+           display: block;
+           margin:1rem 0rem;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Contact me</h2>
+    <hr>
+    <form action="none" style="text-align:center" id="contactForm">
+        <label>
+            Full Name
+            <input type="text" name="fullName">
+        </label>
+        
+        <label>
+            Email Address
+            <input type="email" name="email">
+        </label>
+
+        <label>
+            Phone Number
+            <input type="number" name="number">
+        </label>
+
+        <label>
+            Description
+            <textarea name="description" id=""></textarea>
+        </label>
+
+        <label>
+            Contact method
+
+            <label >
+                Phone
+                <input type="radio" name="method" value="phone">
+            </label>
+             <label >
+                email
+                <input type="radio" name="method" value="email">
+            </label>
+        </label>
+
+
+        <label>
+            subscribe to newsLetter
+            <input type="checkbox" name="subscribeLetter" value="yes" required>
+        </label>
+        <br>
+        <button type="submit" style="margin:1rem">
+            Submit
+        </button>
+    </form>
+
+
+
+    <script>
+
+        let contactForm = document.getElementById("contactForm")
+        console.log(contactForm)
+        contactForm.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            console.log("hello")
+            let contactData = new FormData(contactForm)
+            console.log(contactData.get("subscribeLetter"))
+            console.log(contactData.get("method"))
+        })
+
+    </script>
+</body>
+</html>

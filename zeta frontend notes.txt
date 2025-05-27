@@ -5,6 +5,16 @@ Object.valueOf = () => a;       // defines what to return when coerced to number
 ------- origin of html -----------
 Tim Berners-Lee, a British computer scientist at CERN, invented HTML as part of his larger project to create a global information-sharing system, which became the World Wide Web.
 
+**** html is not case-sesitive for tags and attribute names
+Example: below is rendered a normal
+<HTML>
+  <BoDy>
+    <Div CLASS="myClass">Hello, World!</Div>
+  </BoDy>
+</HTML>
+
+
+
 
 ------ explore html5 ----------
 
@@ -232,3 +242,29 @@ throttler: limti the rate of funciton execution for some rate in an interval
 
 
 ***** Date Object tutorial ------------------
+
+
+****** seo optimisation step ---------------
+1) add tags and relavant content in title
+2) add meta  description tag with relavanet content and tags
+3) use sematic tags for better crawling(article, section, footer)
+4) 	Use <h1> for the main title, <h2> for subheadings, etc.
+5) use alt for image seo with description of image
+6) use internal page linking with bookmarks and href to same page other pages.
+
+
+
+***---- practice on media queries, animation/transitions grids and flexbox ---------------
+
+
+***** html crash course -----------------------------
+
+
+
+*** ----- form element html -------
+** action attribute:
+
+
+***** webpack and babel in js World
+webpack: this is a module bundler takes all files(html, css and js) and serves to from in a optimised way
+babel: babel is a transpiler that converts to new js to older js for browsers to understand.
