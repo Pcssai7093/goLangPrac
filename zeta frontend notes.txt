@@ -52,7 +52,7 @@ possible values:
 1) static(default)
 2) relative(position element relative to itself with top,right, bottom, left)
 3) fixed(positioning element with respect to view port)
-4) abosule(positioning element with respect to its positioned  parent(if parent is not positioned its with repect to view port))
+4) abosule(positioning element with respect to its positioned  parent(bnearest ancestor)(if parent is not positioned its with repect to view port))
 
 
 ***The important parts of a web browser as represented in JavaScript — 
@@ -136,6 +136,17 @@ setTimeout(callback, delay, arg1, arg2, ..., argN)
 here arg1 ... argN are paramerter passed to callack function
 
 
+***------- implicit type  conversion in js -------------
+ability of js to type coarce from one data type to another during concatiaiton or comparfision or arithmatiec operaction
+
+***** why js has primitive and boxed types of same primties --------
+to give primitevi behavior of objects and able to include method for them
+
+
+**** auto boxing and unboxing js
+ability of js to interpreteing primitvis as boxed when needed and boxed as promites baseed on conditions
+
+
 *---------------------Nodejs event loop--------------
 -> libuv is the library used by js that has the event loop this library is written in c
 -> all the synchrounoes code is executed with blocking like and libuv takes care of the asychroues code with event loop
@@ -176,6 +187,7 @@ here arg1 ... argN are paramerter passed to callack function
  ***** JS promises methods ********
 
 1) Promise.all([p1,p2])  // waits for all promises to finish early on first reject.
+used for called mulitple promises concurrenlty bettern than waitiing for each promise with await
 2) primise.allSettled([p1,p2,p3]) // wiats for all to resolve/reject and returns the result on then fmethod
 3) promise.race // resolve/reject with first settle promised
 4) primise.any // resolved with first succesull promise error if all reject
@@ -268,3 +280,6 @@ throttler: limti the rate of funciton execution for some rate in an interval
 ***** webpack and babel in js World
 webpack: this is a module bundler takes all files(html, css and js) and serves to from in a optimised way
 babel: babel is a transpiler that converts to new js to older js for browsers to understand.
+
+
+*****------------ explore dynmaically adding style attrubutes, classes through dom js
