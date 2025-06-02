@@ -1,0 +1,14 @@
+
+** react lifecycle stages
+mouting 
+renderinng
+re rendering
+unmoutining
+
+** react componet re-renders even if it has no props.
+** change of props is not the cause of re rendering but change of state of them and parent component re rendering.
+** React.memo can be helper to stop these uncessary re render without prop values change
+
+
+
+**** Composition in react.
