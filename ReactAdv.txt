@@ -12,3 +12,69 @@ unmoutining
 
 
 **** Composition in react.
+
+** state change of parent causes childrent to re rendder. if possible best way is to move state to lower components
+
+**** imp react ond re render child component if passed as props if the  child component has no changes. as diff or ref is same passed from parent. *****
+as the child compoents have the same referect as they passed from the parent
+
+
+**** The children prop in React has a special status because it's a built-in prop automatically provided by React. It's used to pass JSX (or other elements) between the opening and closing tags of a component.
+
+example
+function Wrapper({ children }) {
+  return <div className="wrapper">{children}</div>;
+}
+
+function App() {
+  return (
+    <Wrapper>
+      <h1>Hello World</h1>
+      <p>This is content passed as children.</p>
+    </Wrapper>
+  );
+}
+
+
+*** eleement are also objectsjjj
+
+**** react.cloneElement(element,new props)
+*** clone an exsisting element with new props passed.
+
+
+** elements are object it doesn;t matter where they are declared but they are rendered or put into render tree when they are returned by a component
+
+
+***** render props pattern
+
+*** useref can be used to memoize values and prevents re rendering on values chagneshjj
+
+**** Memoization (react diffing uses only shalow comparision)
+
+** memoziaion of function with usecallbeck usefull when you are passsing function as prop enabling not to create again
+***** sometimes its cheap to recreate than memozation
+
+
+** rendering depends whether object/child components are crated locally or passed as props
+
+** re rendering vs remounting
+
+*** re rending happeens when props of a componeent are state changed (state is restored)
+*** re mounting is like react unmounts the component and moutns(state is destroyed)
+
+
+*** in react reconcillated algorithm it compaare componets with refecrence and also type(components are objects)
+
+
+*** react key attribute significance
+its to identity child list items while renrendering and dont destroy its state. enables chilred to restore the state.
+its enables react to use the correct instance of child during re redering with keys
+
+
+**** use uniqid for a child item than index as key as this heps in identitying the child item accross re renders even when item are rearraged in different order
+
+
+**** higher order component
+components that takes other components as props.
+used for inject new props to exisitn componets are componemt wrappers'
+
